@@ -1,7 +1,7 @@
 # Konversi Mata Uang App
 
 # Mata Uang : IND, US, JPY, THA, SBP
-list_mata_uang = ['IND', 'US', 'JPY', 'THA', 'TUR']
+list_mata_uang = ['IND', 'US', 'JPY', 'THA', 'TUR', 'VNM']
 
 while True:
     print(35*"=")
