@@ -26,9 +26,12 @@ while True:
             print(f"Hasil Konversi {dollarKeRupiah} Dollar")
         
         # Konversi ke JPY
-
+        elif(kode_mata_uang == 'JPY'):
+            mata_uang_sekarang = int(input("Masukkan Mata Uang Sekarang : Rp."))
+            yenKeRupiah = mata_uang_sekarang / 105.17
+            print(f"Hasil Konversi {yenKeRupiah} Yen") 
         # Konversi ke THA
-
+        
         # Konversi ke TUR
 
     print(35*"=")
