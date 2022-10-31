@@ -1,7 +1,7 @@
 # Konversi Mata Uang App
 
 # Mata Uang : IND, US, JPY, THA, SBP
-list_mata_uang = ['IND', 'US', 'JPY', 'THA', 'TUR']
+list_mata_uang = ['IND', 'US', 'JPY', 'THA', 'TUR', 'VNM', 'SGD']
 
 while True:
     print(35*"=")
@@ -26,16 +26,22 @@ while True:
             print(f"Hasil Konversi {dollarKeRupiah} Dollar")
         
         # Konversi ke JPY
-
+        elif(kode_mata_uang == 'JPY'):
+            mata_uang_sekarang = int(input("Masukkan Mata Uang Sekarang : Rp."))
+            yenKeRupiah = mata_uang_sekarang / 105.17
+            print(f"Hasil Konversi {yenKeRupiah} Yen") 
         # Konversi ke THA
 
         # Konversi ke TUR
-        if(kode_mata_uang == 'TUR'):
-            mata_uang_sekarang = int(input("Masukkan Mata Uang Sekarang : Rp."))
-            LIRAKeRupiah = mata_uang_sekarang / 841.44
-            print(f"Hasil Konversi {LIRAKeRupiah} LIRA")
         
-
+        # Konversi ke SGD
+        elif(kode_mata_uang == 'SGD'):
+            mata_uang_sekarang = int(input("Masukkan Mata Uang Sekarang : Rp."))
+            sgdKeRupiah = mata_uang_sekarang / 11043
+            print(f"Hasil Konversi {sgdKeRupiah} SGD")
+            
+            
+            
     print(35*"=")
     isSelesai = input("Apakah Sudah Selesai\n1.yes\n2.no\n=>")
     if int(isSelesai) == 1:
