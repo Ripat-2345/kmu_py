@@ -38,8 +38,8 @@ while True:
         # Konversi ke TUR
         elif(kode_mata_uang == 'TUR'):
             mata_uang_sekarang = int(input("Masukkan Mata Uang Sekarang : Rp."))
-            LIRAKeRupiah = mata_uang_sekarang / 841.44
-            print(f"Hasil Konversi {LIRAKeRupiah} LIRA")
+            liraKeRupiah = mata_uang_sekarang / 841.44
+            print(f"Hasil Konversi {liraKeRupiah} Lira")
         
         # Konversi ke SGD
         elif(kode_mata_uang == 'SGD'):
@@ -47,8 +47,12 @@ while True:
             sgdKeRupiah = mata_uang_sekarang / 11043
             print(f"Hasil Konversi {sgdKeRupiah} SGD")
             
-            
-            
+        # Konversi ke VNM
+        elif(kode_mata_uang == 'VNM'):
+            mata_uang_sekarang = int(input("Masukkan Mata Uang Sekarang : Rp."))
+            vnmKeRupiah = mata_uang_sekarang / 0.63
+            print(f"Hasil Konversi {vnmKeRupiah} VNM")
+                        
     print(35*"=")
     isSelesai = input("Apakah Sudah Selesai\n1.yes\n2.no\n=>")
     if int(isSelesai) == 1:
