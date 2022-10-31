@@ -1,7 +1,7 @@
 # Konversi Mata Uang App
 
 # Mata Uang : IND, US, JPY, THA, SBP
-list_mata_uang = ['IND', 'US', 'JPY', 'THA', 'TUR', 'VNM']
+list_mata_uang = ['IND', 'US', 'JPY', 'THA', 'TUR']
 
 while True:
     print(35*"=")
@@ -30,6 +30,11 @@ while True:
         # Konversi ke THA
 
         # Konversi ke TUR
+        if(kode_mata_uang == 'TUR'):
+            mata_uang_sekarang = int(input("Masukkan Mata Uang Sekarang : Rp."))
+            LIRAKeRupiah = mata_uang_sekarang / 841.44
+            print(f"Hasil Konversi {LIRAKeRupiah} LIRA")
+        
 
     print(35*"=")
     isSelesai = input("Apakah Sudah Selesai\n1.yes\n2.no\n=>")
