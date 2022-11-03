@@ -15,7 +15,23 @@ while True:
     if(pilihan == 1):
         mata_uang_sekarang = int(input("Masukkan Mata Uang Sekarang : Rp."))
         dollarKeRupiah = mata_uang_sekarang // 14000
-        print(f"Hasil Konversi\n=>(US)Dollar = {dollarKeRupiah}\n=>(JPY)Jepang = {dollarKeRupiah}")
+        print(f"Hasil Konversi\n=>(US)Dollar = {dollarKeRupiah}")
+
+        yenKeRupiah = mata_uang_sekarang / 105.17
+        print(f"Hasil Konversi {yenKeRupiah} Yen") 
+ 
+        thaKeRupiah = mata_uang_sekarang / 409.76
+        print(f"Hasil Konversi {thaKeRupiah} THA") 
+
+        liraKeRupiah = mata_uang_sekarang / 841.44
+        print(f"Hasil Konversi {liraKeRupiah} Lira")
+
+        sgdKeRupiah = mata_uang_sekarang / 11043
+        print(f"Hasil Konversi {sgdKeRupiah} SGD")
+            
+        vnmKeRupiah = mata_uang_sekarang / 0.63
+        print(f"Hasil Konversi {vnmKeRupiah} VNM")
+        
     # Operasi Pilihan Kedua
     elif(pilihan == 2):
         kode_mata_uang = input("Masukkan Kode Mata Uang : ")
