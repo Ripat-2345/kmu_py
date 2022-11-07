@@ -1,14 +1,20 @@
 # Konversi Mata Uang App
 
 # Mata Uang : IND, US, JPY, THA, SBP
-list_mata_uang = ['IND', 'US', 'JPY', 'THA', 'TUR', 'VNM', 'SGD']
+listMataUang = ['IND', 'US', 'JPY', 'THA', 'TUR', 'VNM', 'SGD', 'KOR']
 
 while True:
-    print(35*"=")
-    print(f"Mata Uang Yang Tersedia\n{list_mata_uang}")
-    print(10*"=","PILIHAN MENU APLIKASI",10*"=")
-    print("1.Konversi keseluruh mata uang yang tersedia")
-    print("2.Konversi ke salah satu mata uang")
+    print(16*"=","DAFTAR NEGARA",16*"=")
+    for i in range(len(listMataUang)):
+        print(f"{listMataUang[i]}",end=" | ")
+        
+    print()
+    print(47*"=")
+    print(12*"=","PILIHAN MENU APLIKASI",12*"=")
+    print(47*"=")
+    print("1.Konversi Mata Uang Yang Tersedia")
+    print("2.Konversi Ke Salah Satu Negara")
+    print(47*"=")
     pilihan = int(input("=>"))
     
     # Operasi Pilihan Pertama
@@ -69,7 +75,12 @@ while True:
             vnmKeRupiah = mata_uang_sekarang / 0.63
             print(f"Hasil Konversi {vnmKeRupiah} VNM")
                         
-    print(35*"=")
-    isSelesai = input("Apakah Sudah Selesai\n1.yes\n2.no\n=>")
-    if int(isSelesai) == 1:
+    print(47*"=")
+    isLanjut = input("Lanjut Konversi?(yes/no)\n=>")
+    if isLanjut == 'yes' or isLanjut == 'YES':
+        continue
+    else:
+        print(47*"=")
+        print("Terima Kasih Telah Menggunakan Aplikasi Kami :)")
+        print(47*"=")
         break
