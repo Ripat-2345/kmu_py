@@ -41,26 +41,56 @@ while True:
 
             INDkeSGD = jumlahUang / 11043
             print(f"({listMataUang[6]})\t=> S${INDkeSGD:.2f}")
+            
+            INDkeKOR = jumlahUang * 0.088
+            print(f"({listMataUang[7]})\t=> ₩{INDkeKOR:.2f}")            
+            
         # * ==================================================
         elif kodeNegara == 'US' or kodeNegara == 'us':
             jumlahUang = int(input("Masukkan Jumlah Uang : $"))
             USkeIND = jumlahUang * 14000
             print(f"({listMataUang[0]})\t=> RP{USkeIND:.2f}")
 
-            USkeJPY = jumlahUang * 146.55
+            USkeJPY = jumlahUang * 146.31
             print(f"({listMataUang[2]})\t=> ¥{USkeJPY:.2f}")
 
-            USkeTHA = jumlahUang / 409.76
+            USkeTHA = jumlahUang * 37.21
             print(f"({listMataUang[3]})\t=> ฿{USkeTHA:.2f}") 
 
-            USkeTUR = jumlahUang / 841.44
+            USkeTUR = jumlahUang * 18.61
             print(f"({listMataUang[4]})\t=> ₺{USkeTUR:.2f}")
 
-            USkeCNY = jumlahUang / 2167.98
+            USkeCNY = jumlahUang * 7.25
             print(f"({listMataUang[5]})\t=> ¥{USkeCNY:.2f}")
 
-            USkeSGD = jumlahUang / 11043
+            USkeSGD = jumlahUang * 1.40
             print(f"({listMataUang[6]})\t=> S${USkeSGD:.2f}")
+            
+            USkeKOR = jumlahUang * 1378.09
+            print(f"({listMataUang[7]})\t=> ₩{USkeKOR:.2f}")
+        # * ==================================================
+        elif kodeNegara == 'JPY' or kodeNegara == 'jpy':
+            jumlahUang = int(input("Masukkan Jumlah Uang : ¥"))
+            JPYkeIND = jumlahUang * 106.97
+            print(f"({listMataUang[0]})\t=> RP{JPYkeIND:.2f}")
+
+            JPYkeUS = jumlahUang * 0.0068
+            print(f"({listMataUang[1]})\t=> US${JPYkeUS:.2f}")
+
+            JPYkeTHA = jumlahUang * 0.25
+            print(f"({listMataUang[3]})\t=> ฿{JPYkeTHA:.2f}") 
+
+            JPYkeTUR = jumlahUang * 0.13
+            print(f"({listMataUang[4]})\t=> ₺{JPYkeTUR:.2f}")
+
+            JPYkeCNY = jumlahUang * 0.050
+            print(f"({listMataUang[5]})\t=> ¥{JPYkeCNY:.2f}")
+
+            JPYkeSGD = jumlahUang * 0.0096
+            print(f"({listMataUang[6]})\t=> S${JPYkeSGD:.2f}")
+            
+            JPYkeKOR = jumlahUang * 9.41
+            print(f"({listMataUang[7]})\t=> ₩{JPYkeKOR:.2f}")
         # * ==================================================
         else:
             print(47*"=")
