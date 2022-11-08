@@ -24,7 +24,7 @@ while True:
         # * ==================================================
         if kodeNegara == 'IND' or kodeNegara == 'ind':
             jumlahUang = int(input("Masukkan Jumlah Uang : RP"))
-            INDkeUS = jumlahUang // 14000
+            INDkeUS = jumlahUang / 14000
             print(f"({listMataUang[1]})\t=> US${INDkeUS:.2f}")
 
             INDkeJPY = jumlahUang / 105.17
@@ -44,7 +44,6 @@ while True:
             
             INDkeKOR = jumlahUang * 0.088
             print(f"({listMataUang[7]})\t=> ₩{INDkeKOR:.2f}")            
-            
         # * ==================================================
         elif kodeNegara == 'US' or kodeNegara == 'us':
             jumlahUang = int(input("Masukkan Jumlah Uang : $"))
@@ -206,7 +205,6 @@ while True:
 
             KORkeSGD = jumlahUang * 0.0010
             print(f"({listMataUang[6]})\t=> S${KORkeSGD:.2f}")
-            
         # * ==================================================
         else:
             print(47*"=")
@@ -224,39 +222,39 @@ while True:
                 if kodeNegaraAsal == 'BACK' or kodeNegaraAsal == 'back':
                     isLanjut = False
                 elif kodeNegaraAsal == 'US' or kodeNegaraAsal == 'us':
-                    jumlahUang = int(input("Masukkan Jumlah Uang : RP"))
-                    USkeIND = jumlahUang / 14000
+                    jumlahUang = int(input("Masukkan Jumlah Uang : $"))
+                    USkeIND = jumlahUang * 14000
                     print(f"=> ${USkeIND:.2f}")
                     isLanjut = False
                 elif kodeNegaraAsal == 'JPY' or kodeNegaraAsal == 'jpy':
                     jumlahUang = int(input("Masukkan Jumlah Uang : ¥"))
-                    USkeJPY = jumlahUang / 14000
-                    print(f"=> ${USkeJPY:.2f}")
+                    JPYkeIND = jumlahUang * 106.97
+                    print(f"=> ${JPYkeIND:.2f}")
                     isLanjut = False
                 elif kodeNegaraAsal == 'THA' or kodeNegaraAsal == 'tha':
                     jumlahUang = int(input("Masukkan Jumlah Uang : ฿"))
-                    USkeTHA = jumlahUang / 14000
-                    print(f"=> ${USkeTHA:.2f}")
+                    THAkeIND = jumlahUang * 420.42
+                    print(f"=> ${THAkeIND:.2f}")
                     isLanjut = False
                 elif kodeNegaraAsal == 'TUR' or kodeNegaraAsal == 'tur':
                     jumlahUang = int(input("Masukkan Jumlah Uang : ₺"))
-                    USkeTUR = jumlahUang / 14000
-                    print(f"=> ${USkeTUR:.2f}")
+                    TURkeIND = jumlahUang * 840.060
+                    print(f"=> ${TURkeIND:.2f}")
                     isLanjut = False
                 elif kodeNegaraAsal == 'CNY' or kodeNegaraAsal == 'cny':
                     jumlahUang = int(input("Masukkan Jumlah Uang : ¥"))
-                    USkeCNY = jumlahUang / 14000
-                    print(f"=> ${USkeCNY:.2f}")
+                    CNYkeIND = jumlahUang * 2156.65
+                    print(f"=> ${CNYkeIND:.2f}")
                     isLanjut = False
                 elif kodeNegaraAsal == 'SGD' or kodeNegaraAsal == 'sgd':
                     jumlahUang = int(input("Masukkan Jumlah Uang : S$"))
-                    USkeSGD = jumlahUang / 14000
-                    print(f"=> ${USkeSGD:.2f}")
+                    SGDkeIND = jumlahUang * 11152.14
+                    print(f"=> RP{SGDkeIND:.2f}")
                     isLanjut = False
                 elif kodeNegaraAsal == 'KOR' or kodeNegaraAsal == 'kor':
-                    jumlahUang = int(input("Masukkan Jumlah Uang : S$"))
-                    USkeSGD = jumlahUang / 14000
-                    print(f"=> ${USkeSGD:.2f}")
+                    jumlahUang = int(input("Masukkan Jumlah Uang : ₩"))
+                    KORkeIND = jumlahUang * 11.37
+                    print(f"=> RP{KORkeIND:.2f}")
                     isLanjut = False
                 else:
                     print(47*"=")
