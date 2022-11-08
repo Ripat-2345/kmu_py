@@ -92,6 +92,122 @@ while True:
             JPYkeKOR = jumlahUang * 9.41
             print(f"({listMataUang[7]})\t=> ₩{JPYkeKOR:.2f}")
         # * ==================================================
+        elif kodeNegara == 'THA' or kodeNegara == 'tha':
+            jumlahUang = int(input("Masukkan Jumlah Uang : ฿"))
+            THAkeIND = jumlahUang * 106.97
+            print(f"({listMataUang[0]})\t=> RP{THAkeIND:.2f}")
+
+            THAkeUS = jumlahUang * 0.0068
+            print(f"({listMataUang[1]})\t=> US${THAkeUS:.2f}")
+
+            THAkeJPY = jumlahUang * 0.25
+            print(f"({listMataUang[2]})\t=> ¥{THAkeJPY:.2f}") 
+
+            THAkeTUR = jumlahUang * 0.13
+            print(f"({listMataUang[4]})\t=> ₺{THAkeTUR:.2f}")
+
+            THAkeCNY = jumlahUang * 0.050
+            print(f"({listMataUang[5]})\t=> ¥{THAkeCNY:.2f}")
+
+            THAkeSGD = jumlahUang * 0.0096
+            print(f"({listMataUang[6]})\t=> S${THAkeSGD:.2f}")
+            
+            THAkeKOR = jumlahUang * 9.41
+            print(f"({listMataUang[7]})\t=> ₩{THAkeKOR:.2f}")
+        # * ==================================================
+        elif kodeNegara == 'TUR' or kodeNegara == 'tur':
+            jumlahUang = int(input("Masukkan Jumlah Uang : ₺"))
+            TURkeIND = jumlahUang * 106.97
+            print(f"({listMataUang[0]})\t=> RP{TURkeIND:.2f}")
+
+            TURkeUS = jumlahUang * 0.0068
+            print(f"({listMataUang[1]})\t=> US${TURkeUS:.2f}")
+            
+            TURkeJPY = jumlahUang * 0.13
+            print(f"({listMataUang[2]})\t=> ₺{TURkeJPY:.2f}")
+
+            TURkeTHA = jumlahUang * 0.25
+            print(f"({listMataUang[3]})\t=> ฿{TURkeTHA:.2f}") 
+
+            TURkeCNY = jumlahUang * 0.050
+            print(f"({listMataUang[5]})\t=> ¥{TURkeCNY:.2f}")
+
+            TURkeSGD = jumlahUang * 0.0096
+            print(f"({listMataUang[6]})\t=> S${TURkeSGD:.2f}")
+            
+            TURkeKOR = jumlahUang * 9.41
+            print(f"({listMataUang[7]})\t=> ₩{TURkeKOR:.2f}")
+        # * ==================================================
+        elif kodeNegara == 'CNY' or kodeNegara == 'cny':
+            jumlahUang = int(input("Masukkan Jumlah Uang : ¥"))
+            CNYkeIND = jumlahUang * 106.97
+            print(f"({listMataUang[0]})\t=> RP{CNYkeIND:.2f}")
+
+            CNYkeUS = jumlahUang * 0.0068
+            print(f"({listMataUang[1]})\t=> US${CNYkeUS:.2f}")
+
+            CNYkeJPY = jumlahUang * 0.050
+            print(f"({listMataUang[2]})\t=> ¥{CNYkeJPY:.2f}")
+            
+            CNYkeTHA = jumlahUang * 0.25
+            print(f"({listMataUang[3]})\t=> ฿{CNYkeTHA:.2f}") 
+
+            CNYkeTUR = jumlahUang * 0.13
+            print(f"({listMataUang[4]})\t=> ₺{CNYkeTUR:.2f}")
+
+            CNYkeSGD = jumlahUang * 0.0096
+            print(f"({listMataUang[6]})\t=> S${CNYkeSGD:.2f}")
+            
+            CNYkeKOR = jumlahUang * 9.41
+            print(f"({listMataUang[7]})\t=> ₩{CNYkeKOR:.2f}")
+        # * ==================================================
+        elif kodeNegara == 'SGD' or kodeNegara == 'sgd':
+            jumlahUang = int(input("Masukkan Jumlah Uang : S$"))
+            SGDkeIND = jumlahUang * 106.97
+            print(f"({listMataUang[0]})\t=> RP{SGDkeIND:.2f}")
+
+            SGDkeUS = jumlahUang * 0.0068
+            print(f"({listMataUang[1]})\t=> US${SGDkeUS:.2f}")
+
+            SGDkeJPY = jumlahUang * 0.0096
+            print(f"({listMataUang[2]})\t=> ¥{SGDkeJPY:.2f}")
+            
+            SGDkeTHA = jumlahUang * 0.25
+            print(f"({listMataUang[3]})\t=> ฿{SGDkeTHA:.2f}") 
+
+            SGDkeTUR = jumlahUang * 0.13
+            print(f"({listMataUang[4]})\t=> ₺{SGDkeTUR:.2f}")
+
+            SGDkeCNY = jumlahUang * 0.050
+            print(f"({listMataUang[5]})\t=> ¥{SGDkeCNY:.2f}")
+            
+            SGDkeKOR = jumlahUang * 9.41
+            print(f"({listMataUang[7]})\t=> ₩{SGDkeKOR:.2f}")
+        # * ==================================================
+        elif kodeNegara == 'KOR' or kodeNegara == 'kor':
+            jumlahUang = int(input("Masukkan Jumlah Uang : ₩"))
+            KORkeIND = jumlahUang * 106.97
+            print(f"({listMataUang[0]})\t=> RP{KORkeIND:.2f}")
+
+            KORkeUS = jumlahUang * 0.0068
+            print(f"({listMataUang[1]})\t=> US${KORkeUS:.2f}")
+
+            KORkeJPY = jumlahUang * 9.41
+            print(f"({listMataUang[2]})\t=> ¥{KORkeJPY:.2f}")
+            
+            KORkeTHA = jumlahUang * 0.25
+            print(f"({listMataUang[3]})\t=> ฿{KORkeTHA:.2f}") 
+
+            KORkeTUR = jumlahUang * 0.13
+            print(f"({listMataUang[4]})\t=> ₺{KORkeTUR:.2f}")
+
+            KORkeCNY = jumlahUang * 0.050
+            print(f"({listMataUang[5]})\t=> ¥{KORkeCNY:.2f}")
+
+            KORkeSGD = jumlahUang * 0.0096
+            print(f"({listMataUang[6]})\t=> S${KORkeSGD:.2f}")
+            
+        # * ==================================================
         else:
             print(47*"=")
             print("Kode Negara Tidak Ada Silahkan Pilih Yang Ada")
