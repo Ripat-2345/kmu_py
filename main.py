@@ -685,6 +685,9 @@ while True:
                     print(47*"=")
                     print("Maaf Kode Negara Anda Tidak Tersedia\nAnda Dapat Mencoba Kode Yang Tersedia\nSilahkan Ketik 'BACK' Untuk Keluar Dari Menu 2")
                     print(47*"=")
+        else:
+            print(47*"=")
+            print("Maaf Kode Negara Tidak Tersedia\nAnda Dapat Mencoba Kode Yang Tersedia")
         # * ==================================================
 
 # * ============================================================================
