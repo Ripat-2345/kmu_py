@@ -775,52 +775,77 @@ while True:
                     if kodeNegaraAsal == 'BACK' or kodeNegaraAsal == 'back':
                         isLanjut = False
                     elif kodeNegaraAsal == 'IND' or kodeNegaraAsal == 'ind':
-                        jumlahUang = float(input("Masukkan Jumlah Uang : RP"))
-                        print(47*"=")
-                        INDkeCNY = jumlahUang / 2167.98
-                        print(f"=> ¥{INDkeCNY:.2f}")
-                        isLanjut = False
+                        try:
+                            masukkan = float(input("Masukkan Jumlah Uang : RP"))
+                            print(f"=> ₺{jumlahUang:.2f}")
+                            isLanjut = False
+                        except:
+                            print(47*"=")
+                            print("Maaf Masukkan Hanya Angka!")
+                            print(47*"=")
                     elif kodeNegaraAsal == 'JPY' or kodeNegaraAsal == 'jpy':
-                        jumlahUang = float(input("Masukkan Jumlah Uang : ¥"))
-                        print(47*"=")
-                        JPYkeCNY = jumlahUang * 0.050
-                        print(f"=> ¥{JPYkeCNY:.2f}")
-                        isLanjut = False
+                        try:
+                            masukkan = float(input("Masukkan Jumlah Uang : ¥"))
+                            print(f"=> ₺{jumlahUang:.2f}")
+                            isLanjut = False
+                        except:
+                            print(47*"=")
+                            print("Maaf Masukkan Hanya Angka!")
+                            print(47*"=")
                     elif kodeNegaraAsal == 'THA' or kodeNegaraAsal == 'tha':
-                        jumlahUang = float(input("Masukkan Jumlah Uang : ฿"))
-                        print(47*"=")
-                        THAkeCNY = jumlahUang * 0.19
-                        print(f"=> ¥{THAkeCNY:.2f}")
-                        isLanjut = False
+                        try:
+                            masukkan = float(input("Masukkan Jumlah Uang : ฿"))
+                            print(f"=> ₺{jumlahUang:.2f}")
+                            isLanjut = False
+                        except:
+                            print(47*"=")
+                            print("Maaf Masukkan Hanya Angka!")
+                            print(47*"=")
                     elif kodeNegaraAsal == 'TUR' or kodeNegaraAsal == 'tur':
-                        jumlahUang = float(input("Masukkan Jumlah Uang : ₺"))
-                        print(47*"=")
-                        TURkeCNY = jumlahUang * 0.39
-                        print(f"=> ¥{TURkeCNY:.2f}")
-                        isLanjut = False
+                        try:
+                            masukkan = float(input("Masukkan Jumlah Uang : ₺"))
+                            print(f"=> ₺{jumlahUang:.2f}")
+                            isLanjut = False
+                        except:
+                            print(47*"=")
+                            print("Maaf Masukkan Hanya Angka!")
+                            print(47*"=")
                     elif kodeNegaraAsal == 'US' or kodeNegaraAsal == 'us':
-                        jumlahUang = float(input("Masukkan Jumlah Uang : US$"))
-                        print(47*"=")
-                        USkeCNY = jumlahUang * 7.25
-                        print(f"=> ¥{USkeCNY:.2f}")
-                        isLanjut = False
+                        try:
+                            masukkan = float(input("Masukkan Jumlah Uang : US$"))
+                            print(f"=> ₺{jumlahUang:.2f}")
+                            isLanjut = False
+                        except:
+                            print(47*"=")
+                            print("Maaf Masukkan Hanya Angka!")
+                            print(47*"=")
                     elif kodeNegaraAsal == 'SGD' or kodeNegaraAsal == 'sgd':
-                        jumlahUang = float(input("Masukkan Jumlah Uang : S$"))
-                        print(47*"=")
-                        SGDkeCNY = jumlahUang * 5.17
-                        print(f"=> ¥{SGDkeCNY:.2f}")
-                        isLanjut = False
+                        try:
+                            masukkan = float(input("Masukkan Jumlah Uang : S$"))
+                            print(f"=> ₺{jumlahUang:.2f}")
+                            isLanjut = False
+                        except:
+                            print(47*"=")
+                            print("Maaf Masukkan Hanya Angka!")
+                            print(47*"=")
                     elif kodeNegaraAsal == 'KOR' or kodeNegaraAsal == 'kor':
-                        jumlahUang = float(input("Masukkan Jumlah Uang : ₩"))
-                        print(47*"=")
-                        KORkeCNY = jumlahUang * 0.0053
-                        print(f"=> ¥{KORkeCNY:.2f}")
-                        isLanjut = False
+                        try:
+                            masukkan = float(input("Masukkan Jumlah Uang : ₩"))
+                            print(f"=> ₺{jumlahUang:.2f}")
+                            isLanjut = False
+                        except:
+                            print(47*"=")
+                            print("Maaf Masukkan Hanya Angka!")
+                            print(47*"=")
                     elif kodeNegaraAsal.lower() == kodeNegaraTujuan.lower():
-                        jumlahUang = float(input("Masukkan Jumlah Uang : ¥"))
-                        print(47*"=")
-                        print(f"=> ¥{jumlahUang:.2f}")
-                        isLanjut = False
+                        try:
+                            masukkan = float(input("Masukkan Jumlah Uang : ¥"))
+                            print(f"=> ₺{jumlahUang:.2f}")
+                            isLanjut = False
+                        except:
+                            print(47*"=")
+                            print("Maaf Masukkan Hanya Angka!")
+                            print(47*"=")
                     else:
                         print(47*"=")
                         print("Maaf Kode Negara Anda Tidak Tersedia\nAnda Dapat Mencoba Kode Yang Tersedia\nAnda Bisa Ketik 'BACK' Untuk Keluar Dari Menu 2")
@@ -835,52 +860,77 @@ while True:
                     if kodeNegaraAsal == 'BACK' or kodeNegaraAsal == 'back':
                         isLanjut = False
                     elif kodeNegaraAsal == 'IND' or kodeNegaraAsal == 'ind':
-                        jumlahUang = float(input("Masukkan Jumlah Uang : RP"))
-                        print(47*"=")
-                        INDkeSGD = jumlahUang / 11043
-                        print(f"=> S${INDkeSGD:.2f}")
-                        isLanjut = False
+                        try:
+                            masukkan = float(input("Masukkan Jumlah Uang : RP"))
+                            print(f"=> ₺{jumlahUang:.2f}")
+                            isLanjut = False
+                        except:
+                            print(47*"=")
+                            print("Maaf Masukkan Hanya Angka!")
+                            print(47*"=")
                     elif kodeNegaraAsal == 'JPY' or kodeNegaraAsal == 'jpy':
-                        jumlahUang = float(input("Masukkan Jumlah Uang : ¥"))
-                        print(47*"=")
-                        JPYkeSGD = jumlahUang * 0.0096
-                        print(f"=> S${JPYkeSGD:.2f}")
-                        isLanjut = False
+                        try:
+                            masukkan = float(input("Masukkan Jumlah Uang : ¥"))
+                            print(f"=> ₺{jumlahUang:.2f}")
+                            isLanjut = False
+                        except:
+                            print(47*"=")
+                            print("Maaf Masukkan Hanya Angka!")
+                            print(47*"=")
                     elif kodeNegaraAsal == 'THA' or kodeNegaraAsal == 'tha':
-                        jumlahUang = float(input("Masukkan Jumlah Uang : ฿"))
-                        print(47*"=")
-                        THAkeSGD = jumlahUang * 0.038
-                        print(f"=> S${THAkeSGD:.2f}")
-                        isLanjut = False
+                        try:
+                            masukkan = float(input("Masukkan Jumlah Uang : ฿"))
+                            print(f"=> ₺{jumlahUang:.2f}")
+                            isLanjut = False
+                        except:
+                            print(47*"=")
+                            print("Maaf Masukkan Hanya Angka!")
+                            print(47*"=")
                     elif kodeNegaraAsal == 'TUR' or kodeNegaraAsal == 'tur':
-                        jumlahUang = float(input("Masukkan Jumlah Uang : ₺"))
-                        print(47*"=")
-                        TURkeSGD = jumlahUang * 0.075
-                        print(f"=> S${TURkeSGD:.2f}")
-                        isLanjut = False
+                        try:
+                            masukkan = float(input("Masukkan Jumlah Uang : ₺"))
+                            print(f"=> ₺{jumlahUang:.2f}")
+                            isLanjut = False
+                        except:
+                            print(47*"=")
+                            print("Maaf Masukkan Hanya Angka!")
+                            print(47*"=")
                     elif kodeNegaraAsal == 'CNY' or kodeNegaraAsal == 'cny':
-                        jumlahUang = float(input("Masukkan Jumlah Uang : ¥"))
-                        print(47*"=")
-                        CNYkeSGD = jumlahUang * 0.19
-                        print(f"=> S${CNYkeSGD:.2f}")
-                        isLanjut = False
+                        try:
+                            masukkan = float(input("Masukkan Jumlah Uang : ¥"))
+                            print(f"=> ₺{jumlahUang:.2f}")
+                            isLanjut = False
+                        except:
+                            print(47*"=")
+                            print("Maaf Masukkan Hanya Angka!")
+                            print(47*"=")
                     elif kodeNegaraAsal == 'US' or kodeNegaraAsal == 'us':
-                        jumlahUang = float(input("Masukkan Jumlah Uang : US$"))
-                        print(47*"=")
-                        USkeSGD = jumlahUang * 1.40
-                        print(f"=> S${USkeSGD:.2f}")
-                        isLanjut = False
+                        try:
+                            masukkan = float(input("Masukkan Jumlah Uang : US$"))
+                            print(f"=> ₺{jumlahUang:.2f}")
+                            isLanjut = False
+                        except:
+                            print(47*"=")
+                            print("Maaf Masukkan Hanya Angka!")
+                            print(47*"=")
                     elif kodeNegaraAsal == 'KOR' or kodeNegaraAsal == 'kor':
-                        jumlahUang = float(input("Masukkan Jumlah Uang : ₩"))
-                        print(47*"=")
-                        KORkeSGD = jumlahUang * 0.0010
-                        print(f"=> S${KORkeSGD:.2f}")
-                        isLanjut = False
+                        try:
+                            masukkan = float(input("Masukkan Jumlah Uang : ₩"))
+                            print(f"=> ₺{jumlahUang:.2f}")
+                            isLanjut = False
+                        except:
+                            print(47*"=")
+                            print("Maaf Masukkan Hanya Angka!")
+                            print(47*"=")
                     elif kodeNegaraAsal.lower() == kodeNegaraTujuan.lower():
-                        jumlahUang = float(input("Masukkan Jumlah Uang : S$"))
-                        print(47*"=")
-                        print(f"=> S${jumlahUang:.2f}")
-                        isLanjut = False
+                        try:
+                            masukkan = float(input("Masukkan Jumlah Uang : S$"))
+                            print(f"=> ₺{jumlahUang:.2f}")
+                            isLanjut = False
+                        except:
+                            print(47*"=")
+                            print("Maaf Masukkan Hanya Angka!")
+                            print(47*"=")
                     else:
                         print(47*"=")
                         print("Maaf Kode Negara Anda Tidak Tersedia\nAnda Dapat Mencoba Kode Yang Tersedia\nAnda Bisa Ketik 'BACK' Untuk Keluar Dari Menu 2")
@@ -895,52 +945,78 @@ while True:
                     if kodeNegaraAsal == 'BACK' or kodeNegaraAsal == 'back':
                         isLanjut = False
                     elif kodeNegaraAsal == 'IND' or kodeNegaraAsal == 'ind':
-                        jumlahUang = float(input("Masukkan Jumlah Uang : RP"))
-                        print(47*"=")
-                        INDkeKOR = jumlahUang * 0.088
-                        print(f"=> ₩{INDkeKOR:.2f}")
-                        isLanjut = False
+                        try:
+                            masukkan = float(input("Masukkan Jumlah Uang : RP"))
+                            print(f"=> ₺{jumlahUang:.2f}")
+                            isLanjut = False
+                        except:
+                            print(47*"=")
+                            print("Maaf Masukkan Hanya Angka!")
+                            print(47*"=")
                     elif kodeNegaraAsal == 'JPY' or kodeNegaraAsal == 'jpy':
-                        jumlahUang = float(input("Masukkan Jumlah Uang : ¥"))
-                        print(47*"=")
-                        JPYkeKOR = jumlahUang * 9.41
-                        print(f"=> ₩{JPYkeKOR:.2f}")
-                        isLanjut = False
+                        try:
+                            masukkan = float(input("Masukkan Jumlah Uang : ¥"))
+                            print(f"=> ₺{jumlahUang:.2f}")
+                            isLanjut = False
+                        except:
+                            print(47*"=")
+                            print("Maaf Masukkan Hanya Angka!")
+                            print(47*"=")
                     elif kodeNegaraAsal == 'THA' or kodeNegaraAsal == 'tha':
-                        jumlahUang = float(input("Masukkan Jumlah Uang : ฿"))
-                        print(47*"=")
-                        THAkeKOR = jumlahUang * 36.97
-                        print(f"=> ₩{THAkeKOR:.2f}")
-                        isLanjut = False
+                        try:
+                            masukkan = float(input("Masukkan Jumlah Uang : ฿"))
+                            print(f"=> ₺{jumlahUang:.2f}")
+                            isLanjut = False
+                        except:
+                            print(47*"=")
+                            print("Maaf Masukkan Hanya Angka!")
+                            print(47*"=")
                     elif kodeNegaraAsal == 'TUR' or kodeNegaraAsal == 'tur':
-                        jumlahUang = float(input("Masukkan Jumlah Uang : ₺"))
-                        print(47*"=")
-                        TURkeKOR = jumlahUang * 79.93
-                        print(f"=> ₩{TURkeKOR:.2f}")
-                        isLanjut = False
+                        try:
+                            masukkan = float(input("Masukkan Jumlah Uang : ₺"))
+                            print(f"=> ₺{jumlahUang:.2f}")
+                            isLanjut = False
+                        except:
+                            print(47*"=")
+                            print("Maaf Masukkan Hanya Angka!")
+                            print(47*"=")
                     elif kodeNegaraAsal == 'CNY' or kodeNegaraAsal == 'cny':
-                        jumlahUang = float(input("Masukkan Jumlah Uang : ¥"))
-                        print(47*"=")
-                        CNYkeKOR = jumlahUang * 189.64
-                        print(f"=> ₩{CNYkeKOR:.2f}")
-                        isLanjut = False
+                        try:
+                            masukkan = float(input("Masukkan Jumlah Uang : ¥"))
+                            print(f"=> ₺{jumlahUang:.2f}")
+                            isLanjut = False
+                        except:
+                            print(47*"=")
+                            print("Maaf Masukkan Hanya Angka!")
+                            print(47*"=")
                     elif kodeNegaraAsal == 'SGD' or kodeNegaraAsal == 'sgd':
-                        jumlahUang = float(input("Masukkan Jumlah Uang : S$"))
-                        print(47*"=")
-                        SGDkeKOR = jumlahUang * 980.90
-                        print(f"=> ₩{SGDkeKOR:.2f}")
-                        isLanjut = False
+                        try:
+                            masukkan = float(input("Masukkan Jumlah Uang : S$"))
+                            print(f"=> ₺{jumlahUang:.2f}")
+                            isLanjut = False
+                        except:
+                            print(47*"=")
+                            print("Maaf Masukkan Hanya Angka!")
+                            print(47*"=")
                     elif kodeNegaraAsal == 'US' or kodeNegaraAsal == 'us':
-                        jumlahUang = float(input("Masukkan Jumlah Uang : US$"))
-                        print(47*"=")
-                        USkeKOR = jumlahUang * 1378.09
-                        print(f"=> ₩{USkeKOR:.2f}")
-                        isLanjut = False
+                        try:
+                            masukkan = float(input("Masukkan Jumlah Uang : US$"))
+                            print(f"=> ₺{jumlahUang:.2f}")
+                            isLanjut = False
+                        except:
+                            print(47*"=")
+                            print("Maaf Masukkan Hanya Angka!")
+                            print(47*"=")
                     elif kodeNegaraAsal.lower() == kodeNegaraTujuan.lower():
                         jumlahUang = float(input("Masukkan Jumlah Uang : ₩"))
-                        print(47*"=")
-                        print(f"=> ₩{jumlahUang:.2f}")
-                        isLanjut = False
+                        try:
+                            masukkan = float(input("Masukkan Jumlah Uang : ₩"))
+                            print(f"=> ₺{jumlahUang:.2f}")
+                            isLanjut = False
+                        except:
+                            print(47*"=")
+                            print("Maaf Masukkan Hanya Angka!")
+                            print(47*"=")
                     else:
                         print(47*"=")
                         print("Maaf Kode Negara Anda Tidak Tersedia\nAnda Dapat Mencoba Kode Yang Tersedia\nAnda Bisa Ketik 'BACK' Untuk Keluar Dari Menu 2")
