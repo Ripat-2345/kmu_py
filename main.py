@@ -23,28 +23,33 @@ while True:
         kodeNegara = input("Masukkan Kode Negara :")
         # * ==================================================
         if kodeNegara == 'IND' or kodeNegara == 'ind':
-            jumlahUang = float(input("Masukkan Jumlah Uang : RP"))
-            print(47*"=")
-            INDkeUS = jumlahUang / 14000
-            print(f"({listMataUang[1]})\t=> US${INDkeUS:.2f}")
+            masukkan = input("Masukkan Jumlah Uang : RP")
+            if type(masukkan) != float or type(masukkan) != int:
+                print(47*"=")
+                print("Maaf Masukkan Hanya Angka!")
+            else:
+                jumlahUang = float(masukkan)
+                print(47*"=")
+                INDkeUS = jumlahUang / 14000
+                print(f"({listMataUang[1]})\t=> US${INDkeUS:.2f}")
 
-            INDkeJPY = jumlahUang / 105.17
-            print(f"({listMataUang[2]})\t=> ¥{INDkeJPY:.2f}")
+                INDkeJPY = jumlahUang / 105.17
+                print(f"({listMataUang[2]})\t=> ¥{INDkeJPY:.2f}")
 
-            INDkeTHA = jumlahUang / 409.76
-            print(f"({listMataUang[3]})\t=> ฿{INDkeTHA:.2f}") 
+                INDkeTHA = jumlahUang / 409.76
+                print(f"({listMataUang[3]})\t=> ฿{INDkeTHA:.2f}") 
 
-            INDkeTUR = jumlahUang / 841.44
-            print(f"({listMataUang[4]})\t=> ₺{INDkeTUR:.2f}")
+                INDkeTUR = jumlahUang / 841.44
+                print(f"({listMataUang[4]})\t=> ₺{INDkeTUR:.2f}")
 
-            INDkeCNY = jumlahUang / 2167.98
-            print(f"({listMataUang[5]})\t=> ¥{INDkeCNY:.2f}")
+                INDkeCNY = jumlahUang / 2167.98
+                print(f"({listMataUang[5]})\t=> ¥{INDkeCNY:.2f}")
 
-            INDkeSGD = jumlahUang / 11043
-            print(f"({listMataUang[6]})\t=> S${INDkeSGD:.2f}")
-            
-            INDkeKOR = jumlahUang * 0.088
-            print(f"({listMataUang[7]})\t=> ₩{INDkeKOR:.2f}")            
+                INDkeSGD = jumlahUang / 11043
+                print(f"({listMataUang[6]})\t=> S${INDkeSGD:.2f}")
+
+                INDkeKOR = jumlahUang * 0.088
+                print(f"({listMataUang[7]})\t=> ₩{INDkeKOR:.2f}")            
         # * ==================================================
         elif kodeNegara == 'US' or kodeNegara == 'us':
             jumlahUang = float(input("Masukkan Jumlah Uang : $"))
