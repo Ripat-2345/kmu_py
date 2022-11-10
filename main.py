@@ -220,8 +220,7 @@ while True:
 # * ============================================================================
     # Operasi Pilihan Kedua
     elif(pilihan == 2):
-        isLanjutPilihan2 = True
-        while isLanjutPilihan2:
+        while True:
             kodeNegaraTujuan = input("Masukkan Kode Negara Tujuan : ")
             # * ==================================================
             # Konversi ke IND
@@ -280,9 +279,9 @@ while True:
                         isLanjut = False
                     else:
                         print(47*"=")
-                        print("Maaf Kode Negara Anda Tidak Tersedia\nAnda Dapat Mencoba Kode Yang Tersedia\nSilahkan Ketik 'BACK' Untuk Keluar Dari Menu 2")
+                        print("Maaf Kode Negara Anda Tidak Tersedia\nAnda Dapat Mencoba Kode Yang Tersedia\nAnda Bisa Ketik 'BACK' Untuk Keluar Dari Menu 2")
                         print(47*"=")
-                isLanjutPilihan2 = False
+                break
             # * ==================================================
             # Konversi ke US
             if(kodeNegaraTujuan == 'US' or kodeNegaraTujuan == 'us'):
@@ -340,9 +339,9 @@ while True:
                         isLanjut = False
                     else:
                         print(47*"=")
-                        print("Maaf Kode Negara Anda Tidak Tersedia\nAnda Dapat Mencoba Kode Yang Tersedia\nSilahkan Ketik 'BACK' Untuk Keluar Dari Menu 2")
+                        print("Maaf Kode Negara Anda Tidak Tersedia\nAnda Dapat Mencoba Kode Yang Tersedia\nAnda Bisa Ketik 'BACK' Untuk Keluar Dari Menu 2")
                         print(47*"=")
-                isLanjutPilihan2 = False
+                break
             # * ==================================================
             # Konversi ke JPY
             elif(kodeNegaraTujuan == 'JPY' or kodeNegaraTujuan == 'jpy'):
@@ -400,9 +399,9 @@ while True:
                         isLanjut = False
                     else:
                         print(47*"=")
-                        print("Maaf Kode Negara Anda Tidak Tersedia\nAnda Dapat Mencoba Kode Yang Tersedia\nSilahkan Ketik 'BACK' Untuk Keluar Dari Menu 2")
+                        print("Maaf Kode Negara Anda Tidak Tersedia\nAnda Dapat Mencoba Kode Yang Tersedia\nAnda Bisa Ketik 'BACK' Untuk Keluar Dari Menu 2")
                         print(47*"=")
-                isLanjutPilihan2 = False
+                break
             # * ==================================================
             # Konversi ke THA
             elif(kodeNegaraTujuan == 'THA' or kodeNegaraTujuan == 'tha'):
@@ -460,9 +459,9 @@ while True:
                         isLanjut = False
                     else:
                         print(47*"=")
-                        print("Maaf Kode Negara Anda Tidak Tersedia\nAnda Dapat Mencoba Kode Yang Tersedia\nSilahkan Ketik 'BACK' Untuk Keluar Dari Menu 2")
+                        print("Maaf Kode Negara Anda Tidak Tersedia\nAnda Dapat Mencoba Kode Yang Tersedia\nAnda Bisa Ketik 'BACK' Untuk Keluar Dari Menu 2")
                         print(47*"=")
-                isLanjutPilihan2 = False
+                break
             # * ==================================================
             # Konversi ke TUR
             elif(kodeNegaraTujuan == 'TUR' or kodeNegaraTujuan == 'tur'):
@@ -512,9 +511,9 @@ while True:
                         isLanjut = False
                     else:
                         print(47*"=")
-                        print("Maaf Kode Negara Anda Tidak Tersedia\nAnda Dapat Mencoba Kode Yang Tersedia\nSilahkan Ketik 'BACK' Untuk Keluar Dari Menu 2")
+                        print("Maaf Kode Negara Anda Tidak Tersedia\nAnda Dapat Mencoba Kode Yang Tersedia\nAnda Bisa Ketik 'BACK' Untuk Keluar Dari Menu 2")
                         print(47*"=")
-                isLanjutPilihan2 = False
+                break
             # * ==================================================
             # Konversi ke CNY
             elif(kodeNegaraTujuan == 'CNY' or kodeNegaraTujuan == 'cny'):
@@ -572,9 +571,9 @@ while True:
                         isLanjut = False
                     else:
                         print(47*"=")
-                        print("Maaf Kode Negara Anda Tidak Tersedia\nAnda Dapat Mencoba Kode Yang Tersedia\nSilahkan Ketik 'BACK' Untuk Keluar Dari Menu 2")
+                        print("Maaf Kode Negara Anda Tidak Tersedia\nAnda Dapat Mencoba Kode Yang Tersedia\nAnda Bisa Ketik 'BACK' Untuk Keluar Dari Menu 2")
                         print(47*"=")
-                isLanjutPilihan2 = False
+                break
             # * ==================================================
             # Konversi ke SGD
             elif(kodeNegaraTujuan == 'SGD' or kodeNegaraTujuan == 'sgd'):
@@ -632,9 +631,9 @@ while True:
                         isLanjut = False
                     else:
                         print(47*"=")
-                        print("Maaf Kode Negara Anda Tidak Tersedia\nAnda Dapat Mencoba Kode Yang Tersedia\nSilahkan Ketik 'BACK' Untuk Keluar Dari Menu 2")
+                        print("Maaf Kode Negara Anda Tidak Tersedia\nAnda Dapat Mencoba Kode Yang Tersedia\nAnda Bisa Ketik 'BACK' Untuk Keluar Dari Menu 2")
                         print(47*"=")
-                isLanjutPilihan2 = False
+                break
             # * ==================================================
             # Konversi Ke KOR
             elif(kodeNegaraTujuan == 'KOR' or kodeNegaraTujuan == 'kor'):
@@ -692,12 +691,13 @@ while True:
                         isLanjut = False
                     else:
                         print(47*"=")
-                        print("Maaf Kode Negara Anda Tidak Tersedia\nAnda Dapat Mencoba Kode Yang Tersedia\nSilahkan Ketik 'BACK' Untuk Keluar Dari Menu 2")
+                        print("Maaf Kode Negara Anda Tidak Tersedia\nAnda Dapat Mencoba Kode Yang Tersedia\nAnda Bisa Ketik 'BACK' Untuk Keluar Dari Menu 2")
                         print(47*"=")
-                isLanjutPilihan2 = False
+                break
             else:
                 print(47*"=")
                 print("Maaf Kode Negara Tidak Tersedia\nAnda Dapat Mencoba Kode Yang Tersedia")
+                print(47*"=")
             # * ==================================================
 
 # * ============================================================================
