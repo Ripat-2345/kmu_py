@@ -754,7 +754,8 @@ while True:
                             print(47*"=")
                     elif kodeNegaraAsal.lower() == kodeNegaraTujuan.lower():
                         try:
-                            masukkan = float(input("Masukkan Jumlah Uang : ₺"))
+                            masukkan = input("Masukkan Jumlah Uang : ₺")
+                            jumlahUang = float(masukkan)
                             print(f"=> ₺{jumlahUang:.2f}")
                             isLanjut = False
                         except:
