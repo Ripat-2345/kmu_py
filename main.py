@@ -349,7 +349,8 @@ while True:
                             print(47*"=") 
                     elif kodeNegaraAsal.lower() == kodeNegaraTujuan.lower():
                         try:
-                            masukkan = float(input("Masukkan Jumlah Uang : RP"))
+                            masukkan = input("Masukkan Jumlah Uang : RP")
+                            jumlahUang = float(masukkan)
                             print(f"=> RP{jumlahUang:.2f}")
                             isLanjut = False
                         except:
@@ -444,7 +445,8 @@ while True:
                             print(47*"=")
                     elif kodeNegaraAsal.lower() == kodeNegaraTujuan.lower():
                         try:
-                            masukkan = float(input("Masukkan Jumlah Uang : US$"))
+                            masukkan = input("Masukkan Jumlah Uang : US$")
+                            jumlahUang = float(masukkan)                            
                             print(f"=> US${jumlahUang:.2f}")
                             isLanjut = False
                         except:
@@ -543,7 +545,8 @@ while True:
                             print(47*"=")
                     elif kodeNegaraAsal.lower() == kodeNegaraTujuan.lower():
                         try:
-                            masukkan = float(input("Masukkan Jumlah Uang : ¥"))
+                            masukkan = input("Masukkan Jumlah Uang : ¥")
+                            jumlahUang = float(masukkan)                             
                             print(f"=> ¥{jumlahUang:.2f}")
                             isLanjut = False
                         except:
@@ -642,7 +645,8 @@ while True:
                             print(47*"=")
                     elif kodeNegaraAsal.lower() == kodeNegaraTujuan.lower():
                         try:
-                            masukkan = float(input("Masukkan Jumlah Uang : ฿"))
+                            masukkan = input("Masukkan Jumlah Uang : ฿")
+                            jumlahUang = float(masukkan)  
                             print(f"=> ฿{jumlahUang:.2f}")
                             isLanjut = False
                         except:
@@ -841,7 +845,8 @@ while True:
                             print(47*"=")
                     elif kodeNegaraAsal.lower() == kodeNegaraTujuan.lower():
                         try:
-                            masukkan = float(input("Masukkan Jumlah Uang : ¥"))
+                            masukkan = input("Masukkan Jumlah Uang : ¥")
+                            jumlahUang = float(masukkan)  
                             print(f"=> ¥{jumlahUang:.2f}")
                             isLanjut = False
                         except:
@@ -940,7 +945,8 @@ while True:
                             print(47*"=")
                     elif kodeNegaraAsal.lower() == kodeNegaraTujuan.lower():
                         try:
-                            masukkan = float(input("Masukkan Jumlah Uang : S$"))
+                            masukkan = input("Masukkan Jumlah Uang : S$")
+                            jumlahUang = float(masukkan)                              
                             print(f"=> S${jumlahUang:.2f}")
                             isLanjut = False
                         except:
@@ -1039,7 +1045,8 @@ while True:
                             print(47*"=")
                     elif kodeNegaraAsal.lower() == kodeNegaraTujuan.lower():
                         try:
-                            masukkan = float(input("Masukkan Jumlah Uang : ₩"))
+                            masukkan = input("Masukkan Jumlah Uang : ₩")
+                            jumlahUang = float(masukkan)                              
                             print(f"=> ₩{jumlahUang:.2f}")
                             isLanjut = False
                         except:
