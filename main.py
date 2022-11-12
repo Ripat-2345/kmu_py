@@ -23,12 +23,8 @@ while True:
         kodeNegara = input("Masukkan Kode Negara :")
         # * ==================================================
         if kodeNegara == 'IND' or kodeNegara == 'ind':
-            masukkan = input("Masukkan Jumlah Uang : RP")
-            if type(masukkan) != float or type(masukkan) != int:
-                print(47*"=")
-                print("Maaf Masukkan Hanya Angka!")
-            else:
-                jumlahUang = float(masukkan)
+            try:
+                jumlahUang = float(input("Masukkan Jumlah Uang : RP"))
                 print(47*"=")
                 INDkeUS = jumlahUang / 14000
                 print(f"({listMataUang[1]})\t=> US${INDkeUS:.2f}")
@@ -50,14 +46,13 @@ while True:
 
                 INDkeKOR = jumlahUang * 0.088
                 print(f"({listMataUang[7]})\t=> ₩{INDkeKOR:.2f}")            
-        # * ==================================================
-        elif kodeNegara == 'US' or kodeNegara == 'us':
-            masukkan = input("Masukkan Jumlah Uang : $")
-            if type(masukkan) != float or type(masukkan) != int:
+            except:
                 print(47*"=")
                 print("Maaf Masukkan Hanya Angka!")
-            else:
-                jumlahUang = float(masukkan)            
+        # * ==================================================
+        elif kodeNegara == 'US' or kodeNegara == 'us':
+            try:            
+                jumlahUang = float(input("Masukkan Jumlah Uang : $"))            
                 print(47*"=")
                 USkeIND = jumlahUang * 14000
                 print(f"({listMataUang[0]})\t=> RP{USkeIND:.2f}")
@@ -79,14 +74,13 @@ while True:
                 
                 USkeKOR = jumlahUang * 1378.09
                 print(f"({listMataUang[7]})\t=> ₩{USkeKOR:.2f}")
-        # * ==================================================
-        elif kodeNegara == 'JPY' or kodeNegara == 'jpy':
-            masukkan = input("Masukkan Jumlah Uang : ¥")
-            if type(masukkan) != float or type(masukkan) != int:
+            except:
                 print(47*"=")
                 print("Maaf Masukkan Hanya Angka!")
-            else:
-                jumlahUang = float(masukkan)              
+        # * ==================================================
+        elif kodeNegara == 'JPY' or kodeNegara == 'jpy':
+            try:
+                jumlahUang = float(input("Masukkan Jumlah Uang : ¥"))              
                 print(47*"=")
                 JPYkeIND = jumlahUang * 106.97
                 print(f"({listMataUang[0]})\t=> RP{JPYkeIND:.2f}")
@@ -108,14 +102,13 @@ while True:
                 
                 JPYkeKOR = jumlahUang * 9.41
                 print(f"({listMataUang[7]})\t=> ₩{JPYkeKOR:.2f}")
-        # * ==================================================
-        elif kodeNegara == 'THA' or kodeNegara == 'tha':
-            masukkan = input("Masukkan Jumlah Uang : ฿")
-            if type(masukkan) != float or type(masukkan) != int:
+            except:
                 print(47*"=")
                 print("Maaf Masukkan Hanya Angka!")
-            else:
-                jumlahUang = float(masukkan)  
+        # * ==================================================
+        elif kodeNegara == 'THA' or kodeNegara == 'tha':
+            try:
+                jumlahUang = float(input("Masukkan Jumlah Uang : ฿"))  
                 print(47*"=")
                 THAkeIND = jumlahUang * 420.42
                 print(f"({listMataUang[0]})\t=> RP{THAkeIND:.2f}")
@@ -137,14 +130,13 @@ while True:
                 
                 THAkeKOR = jumlahUang * 36.97
                 print(f"({listMataUang[7]})\t=> ₩{THAkeKOR:.2f}")
-        # * ==================================================
-        elif kodeNegara == 'TUR' or kodeNegara == 'tur':
-            masukkan = input("Masukkan Jumlah Uang : ₺")
-            if type(masukkan) != float or type(masukkan) != int:
+            except:
                 print(47*"=")
                 print("Maaf Masukkan Hanya Angka!")
-            else:
-                jumlahUang = float(masukkan)  
+        # * ==================================================
+        elif kodeNegara == 'TUR' or kodeNegara == 'tur':
+            try:
+                jumlahUang = float(input("Masukkan Jumlah Uang : ₺"))  
                 print(47*"=")
                 TURkeIND = jumlahUang * 840.060
                 print(f"({listMataUang[0]})\t=> RP{TURkeIND:.2f}")
@@ -166,14 +158,13 @@ while True:
                 
                 TURkeKOR = jumlahUang * 79.93
                 print(f"({listMataUang[7]})\t=> ₩{TURkeKOR:.2f}")
-        # * ==================================================
-        elif kodeNegara == 'CNY' or kodeNegara == 'cny':
-            masukkan = input("Masukkan Jumlah Uang : ¥")
-            if type(masukkan) != float or type(masukkan) != int:
+            except:
                 print(47*"=")
                 print("Maaf Masukkan Hanya Angka!")
-            else:
-                jumlahUang = float(masukkan)  
+        # * ==================================================
+        elif kodeNegara == 'CNY' or kodeNegara == 'cny':
+            try:
+                jumlahUang = float(input("Masukkan Jumlah Uang : ¥"))  
                 print(47*"=")
                 CNYkeIND = jumlahUang * 2156.65
                 print(f"({listMataUang[0]})\t=> RP{CNYkeIND:.2f}")
@@ -195,13 +186,13 @@ while True:
                 
                 CNYkeKOR = jumlahUang * 189.64
                 print(f"({listMataUang[7]})\t=> ₩{CNYkeKOR:.2f}")
+            except:
+                print(47*"=")
+                print("Maaf Masukkan Hanya Angka!")
         # * ==================================================
         elif kodeNegara == 'SGD' or kodeNegara == 'sgd':
             masukkan = input("Masukkan Jumlah Uang : S$")
-            if type(masukkan) != float or type(masukkan) != int:
-                print(47*"=")
-                print("Maaf Masukkan Hanya Angka!")
-            else:
+            try:
                 jumlahUang = float(masukkan)  
                 print(47*"=")
                 SGDkeIND = jumlahUang * 11152.14
@@ -224,14 +215,13 @@ while True:
                 
                 SGDkeKOR = jumlahUang * 980.90
                 print(f"({listMataUang[7]})\t=> ₩{SGDkeKOR:.2f}")
-        # * ==================================================
-        elif kodeNegara == 'KOR' or kodeNegara == 'kor':
-            masukkan = input("Masukkan Jumlah Uang : ₩")
-            if type(masukkan) != float or type(masukkan) != int:
+            except:
                 print(47*"=")
                 print("Maaf Masukkan Hanya Angka!")
-            else:
-                jumlahUang = float(masukkan)             
+        # * ==================================================
+        elif kodeNegara == 'KOR' or kodeNegara == 'kor':
+            try:
+                jumlahUang = float(input("Masukkan Jumlah Uang : ₩"))             
                 print(47*"=")
                 KORkeIND = jumlahUang * 11.37
                 print(f"({listMataUang[0]})\t=> RP{KORkeIND:.2f}")
@@ -253,6 +243,9 @@ while True:
 
                 KORkeSGD = jumlahUang * 0.0010
                 print(f"({listMataUang[6]})\t=> S${KORkeSGD:.2f}")
+            except:
+                print(47*"=")
+                print("Maaf Masukkan Hanya Angka!")
         # * ==================================================
         else:
             print(47*"=")
